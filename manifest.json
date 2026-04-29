@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Keyboard Shortcuts",
+  "version": "0.1.0",
+  "description": "Single-key navigation shortcuts for GitHub.",
+  "icons": {
+    "32": "icons/icon-32.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "github-shortcuts@tomasborek.dev",
+      "strict_min_version": "115.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["config.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
