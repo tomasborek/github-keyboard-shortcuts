@@ -7,5 +7,13 @@ const SHORTCUTS = {
     p: "pulls",
     i: "issues",
     a: "actions",
+    o: { type: "owner" },
+    r: { type: "readme" },
+  },
+  // Keys handled on the pulls list to navigate the row selection.
+  pullsList: {
+    next: ["j", "ArrowDown"],
+    prev: ["k", "ArrowUp"],
+    open: ["Enter"],
   },
 };
